@@ -1,1 +1,17 @@
+# Istalando o Nginx
+sudo apt-get update
+sudo apt-get install nginx -y
+
+#Nginx iniciando na iniciação
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+# Create a simple HTML page
+
+sudo echo "<html>
+<body>
+<h1>Bem-vindo ao servidor Nginx</h1>
+</body>
+</html>"
+> /var/www/html/index.html
 
